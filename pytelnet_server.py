@@ -15,13 +15,27 @@ s.bind(("192.168.102.128",8000))
 
 #buffer size to recieve
 
+user=s.recvfrom(10)
+password=s.recvfrom(10)
+
+
+if user[0] == 'root' and password =='123' :
+	s.sendto("allow",password[1])			#ip of client
 #print s.recvfrom(10)
 
-for i in range(10000):   			#to get from all clients
-	data=s.recvfrom(100)
-	print commands.getout(data[0])
+	for i in range(10000):   			#to get from all clients
+		data=s.recvfrom(100)
+		#showing client ip and port	
+		print commands.getout(data[0])
 
-#upto here was server side
+
+		#return something to client
+		s.sendto(output,data[1])
+
+else :
+	print "bad username and password"
+	s.sendto("login failed",password[1])
+	
 '''
 for i in range(10000):   			#to get from all clients
 	data=s.recvfrom(100)
