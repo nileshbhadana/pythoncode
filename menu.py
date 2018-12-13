@@ -32,3 +32,14 @@ elif choice=='4':
 elif choice=='5':
 	curr_username=commands.getoutput("whoami")
 	commands.getoutput("sudo pkill -u "+curr_username)
+elif choice=='6':
+	import getpass
+	user=raw_input("Enter your Email id/username:")
+	passwd=getpass.getpass("Enter Password:")
+	driver.get('https://www.facebook.com')
+	username_box=driver.find_element_by_id('email')
+	password_box=driver.find_element_by_id('pass')
+	login_button=driver.find_element_by_id('loginbutton')
+	username_box.send_keys(user)
+	password_box.send_keys(passwd)
+	login_button.click()
