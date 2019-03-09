@@ -1,0 +1,11 @@
+1545929936018	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.izSwCp70HQtA"
+1545929936871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545929936872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545929939944	Marionette	INFO	Listening on port 43018
+1545929940033	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:4230): dconf-WARNING **: 22:29:35.560: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+[Parent 4023, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 4023, Gecko_IOThread] WARNING: pipe error (109): Connection reset by peer: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 4023, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545929980948	Marionette	INFO	Stopped listening on port 43018

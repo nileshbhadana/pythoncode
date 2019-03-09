@@ -17,8 +17,9 @@ from selenium import webdriver
 import commands 
 # put your if else code here 
 if choice=='1' or choice=='3' or choice=='4' or choice=='6':
-	driver = webdriver.Chrome(executable_path='/home/nilesh/Downloads/chromedriver')	
+#	driver = webdriver.Chrome(executable_path='/home/nilesh/Downloads/chromedriver')	
 	
+	driver = webdriver.Firefox()	
 if choice=='1':
 	#wb.open_new_tab("http://www.google.com")
 	driver.get('https://www.google.com/')		
@@ -28,7 +29,7 @@ elif choice=='3':
 	driver.get('https://www.google.com/search?='+search)
 elif choice=='4':
 	number_of_tabs=len(driver.window_handles)
-	print number_of_tabs
+	print (number_of_tabs)
 elif choice=='5':
 	curr_username=commands.getoutput("whoami")
 	commands.getoutput("sudo pkill -u "+curr_username)
