@@ -1,5 +1,7 @@
 #!/usr/bin/python2
 
+import os #libraries for working with os level
+
 options='''
 press  1  to  open default web browser :   
 press  2  to  check currnet logined user  :   
@@ -18,7 +20,7 @@ import commands
 # put your if else code here 
 if choice=='1' or choice=='3' or choice=='4' or choice=='6':
 #	driver = webdriver.Chrome(executable_path='/home/nilesh/Downloads/chromedriver')	
-	
+	print "opening firefox"
 	driver = webdriver.Firefox()	
 if choice=='1':
 	#wb.open_new_tab("http://www.google.com")
