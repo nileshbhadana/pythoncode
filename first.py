@@ -2,6 +2,7 @@
 
 
 import os,time,commands,webbrowser    #importing libraries
+import system	#libraries for python3 if dont work comment it
 
 menu='''
 Press 1 to check current time and date :
